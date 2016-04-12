@@ -1,7 +1,7 @@
 {
   "host": "To-Do-List-app.feathersjs.com",
   "port": 80,
-  "nedb": "NEDB_BASE_PATH",
+  "knex": "KNEX_BASE_PATH",
   "public": "../public/",
   "auth": {
     "token": {

@@ -1,15 +1,15 @@
 'use strict';
 
 const path = require('path');
-const NeDB = require('nedb');
-const service = require('feathers-nedb');
+const knex = require('knex');
+const service = require('feathers-knex');
 const hooks = require('./hooks');
 
 module.exports = function(){
   const app = this;
 
-  const db = new NeDB({
-    filename: path.join(app.get('nedb'), 'users.db'),
+  const db = new knex({
+    filename: path.join(app.get('knex'), 'users.db'),
     autoload: true
   });
 
